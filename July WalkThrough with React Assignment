@@ -1,0 +1,48 @@
+Assignmet-1
+
+Q-1)
+function Person(props){
+    return(
+        <div>
+            <p>{props.name} is {props.age} years old.</p>
+        </div>
+    );
+}
+export default Person;
+
+  <Person name="a" age="1" 
+
+Q-2)
+function Button(props){
+    return(
+        <><button onClick={props.onClick}> {props.text} </button></>
+        
+    )
+}
+export default Button;
+ <Button text="Click me" onClick={ ()=>
+        console.log("Hello")}/>
+
+Q-3)
+function Title(props){
+    return(
+        <h1>{props.title}</h1>
+    );
+}
+export default Title;
+
+<Title title="assignment" />
+
+Q-4)
+function List(props){
+    const lisItems=props.items.map((item) => 
+    <li key={item}>{item}</li>
+    );
+    return(
+<>
+<ul>{lisItems}</ul>
+</>
+    );
+}
+export default List;
+<List items={["apple","banana","orange"]} />
